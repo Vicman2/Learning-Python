@@ -4,14 +4,14 @@ print()
 print("======3.3.1======")
 def f(n):
     if n % 2 == 0:
-        return n/2
+        return n//2
     else:
-        return ((3*n) + 1)/2
+        return ((3*n) + 1)//2
     
 def F3(n):
-    return int(f(n))
+    return f(n)
 
-print(F3(60))
+print(F3(100000000000000000000000002))
 
 print()
 print("======3.3.2======")
@@ -40,7 +40,6 @@ def averageOfSuchN(n):
     for i in range(1, n+1):
         L1.append(expectedLengthOfF3(i))
     #Computing the average
-    print(L1)
     total = 0
     for i in L1:
         total = total + i

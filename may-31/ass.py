@@ -43,11 +43,12 @@ class Dice():
     def __init__(self, noOfDice=2):
         self.numdice = noOfDice
         self.diceFaces = [1,2,3,4,5,6]
-        self.Values = []
+        self.roll()
     def roll(self):
+        self.Values = []
         for i in range(1, self.numdice + 1):
             self.Values.append(random.choice(self.diceFaces))
-        
+        return sum(self.Values)
     def sum(self):
         if len(self.Values) == 0:
             print("You have to first roll the dice")

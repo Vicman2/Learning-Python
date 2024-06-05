@@ -7,7 +7,7 @@ A = np.array([x1, x2, x3]).transpose()
 b = np.array([1,2,1])
 
 x = np.linalg.solve(A,b)
-print(x)
+print(A@x)
 
 
 print("Please enter the a postive integer: ")

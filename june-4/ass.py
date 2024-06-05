@@ -5,13 +5,13 @@ import math
 import random
 
 
-# fig, ax = plt.subplots()
-# x = np.linspace(-2*math.pi,2*math.pi, 11)
-# y = np.cos(x) + 1.5 * np.sin(x)
+fig, ax = plt.subplots()
+x = np.linspace(-2*math.pi,2*math.pi, 11)
+y = np.cos(x) + 1.5 * np.sin(x)
 
-# ax.plot(x,y, label= "The trigoneometric function")
-# ax.legend()
-# plt.show()
+ax.plot(x,y, label= "The trigoneometric function")
+ax.legend()
+plt.show()
 
 ## Second assignment 
 x = np.linspace(100, 2000, 20)
